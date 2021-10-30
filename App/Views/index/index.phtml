@@ -1,0 +1,16 @@
+<h1>Index</h1>
+<hr>
+
+<?php
+// Debug
+// echo '<pre>';
+// print_r($this->view->dados);
+// echo '</pre>';
+//echo "cheguei na indexController e disparamos a action index";
+foreach ($this->view->dados as $indice => $produto) {
+  //echo $valor ."<br>";
+  echo $produto['id'] . ' - ' .$produto['descricao']. ' - R$' .$produto['preco']. "<br>";
+}
+
+?>
+

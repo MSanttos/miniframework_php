@@ -18,7 +18,7 @@ abstract class Bootstrap {
   }
 
   public function setRoutes($routes) {
-      $this->routes = $routes;
+    $this->routes = $routes;
   }
 
   protected function run($url) {

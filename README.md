@@ -13,3 +13,16 @@
 
 # php composer-setup.php
 # php -r "unlink('composer-setup.php');"
+
+
+### Criando páginas com MVC
+# criar método na indexController;
+
+# instanciar na Route;
+# criar página com conteúdo na View;
+
+# criar index na View/index;
+
+# criar querys Models->novo arquivo nome relacionado
+
+# sempre necessário importar use App\Models\ ...

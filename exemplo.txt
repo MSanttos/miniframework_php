@@ -1,0 +1,32 @@
+public function getProdutos(){
+  $query = "SELECT id, descricao, preco FROM tb_produtos";
+  return $this->db->query($query)->fetchAll();
+}
+
+igual a isto
+
+public function getProdutos(){
+  $sql = "SELECT * FROM tb_produtos";
+  $stmt = $this->db->prepare($sql);
+  $stmt->execute();
+  return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+}
+
+****** RESULTADO ******
+
+[0] => Array
+  (
+      [id] => 1
+      [descricao] => Sofá
+      [preco] => 1250.75
+  )
+
+[0] => Array
+  (
+      [id] => 1
+      [0] => 1
+      [descricao] => Sofá
+      [1] => Sofá
+      [preco] => 1250.75
+      [2] => 1250.75
+  )
